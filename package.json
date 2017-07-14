@@ -1,0 +1,28 @@
+{
+  "name": "rhmap-auth-saml",
+  "version": "1.0.0",
+  "description": "rhmap module to check the SAML auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misanche/rhmap-auth.git"
+  },
+  "keywords": [
+    "saml",
+    "rhmap",
+    "node",
+    "auth"
+  ],
+  "author": "Mikel Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misanche/rhmap-auth/issues"
+  },
+  "homepage": "https://github.com/misanche/rhmap-auth#readme",
+  "dependencies": {
+    "fh-mbaas-api": "^7.0.14"
+  }
+}
