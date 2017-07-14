@@ -53,7 +53,7 @@ function Auth (SAMLAuthProjId) {
  *
  * @param {String} role The role of the app to check if the user has the rights to call to that service
  */
-Keycloak.prototype.protect = function (spec) {
+Auth.prototype.protect = function (spec) {
   return Protect(this, spec);
 };
 module.exports = Auth;
