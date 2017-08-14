@@ -1,6 +1,6 @@
 {
   "name": "rhmap-auth-saml",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "rhmap module to check the SAML auth",
   "main": "index.js",
   "scripts": {
