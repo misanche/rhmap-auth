@@ -22,8 +22,14 @@ module.exports = function (auth, spec) {
                 console.log('Service call failed: ', err, service_res);
                 return err;
             } else {
-                console.log('call', body, service_res);
-                return next();
+                console.log('response auth ok', body, service_res);
+                if (service_res.statusCode == 200) {
+                    return next();
+                } else {
+                    return response.send(service.statusCode).json({msg: service_res.statusMessage});
+                }
+                
+                
             }
         });
     }
