@@ -26,7 +26,7 @@ module.exports = function (auth, spec) {
                 if (service_res.statusCode == 200) {
                     return next();
                 } else {
-                    return response.send(service.statusCode).json({msg: service_res.statusMessage});
+                    return response.status(service.statusCode).send(body);
                 }
                 
                 
